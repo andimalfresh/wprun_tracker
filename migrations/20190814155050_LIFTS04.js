@@ -5,8 +5,8 @@ exports.up = function(knex, Promise) {
       LIFTS.integer("groom_status")
       LIFTS.integer("snow_status")
       LIFTS.boolean("open_status")
-      LIFTS.integer("territory").references("id").inTable("TERRITORY")
-      LIFTS.integer("runs").references("runs").inTable("LIFTS")
+      LIFTS.integer("territory")
+      LIFTS.integer("runs")
     }) 
   }
   

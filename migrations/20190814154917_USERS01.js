@@ -3,7 +3,7 @@ exports.up = function(knex, Promise) {
       USERS.increments("id")
       USERS.string("user_name")
       USERS.string("password")
-      USERS.integer("resort_id").references("id").inTable("RESORTS")
+      USERS.integer("resort_id")
       USERS.string("access_level")
     }) 
   }
