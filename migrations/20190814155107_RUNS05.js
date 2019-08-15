@@ -8,7 +8,7 @@ exports.up = function(knex, Promise) {
       RUNS.integer("snow_status")
       RUNS.boolean("open_status")
       RUNS.integer("territory")
-      RUNS.integer("lift")
+      RUNS.integer("lifts")
     }) 
   }
   
