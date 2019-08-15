@@ -33,7 +33,7 @@ runs: fk:territoryID: fk :liftsID
 lift_name: STRING 
 lift_id: INTEGER
 ride_time: INTEGER
-lift_open: BOOLEAN
+open_status: BOOLEAN
 territory: fk: territory_id
 runs: fk: runs_id (Many to Many)
 

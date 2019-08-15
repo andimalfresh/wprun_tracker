@@ -2,11 +2,11 @@ exports.up = function(knex, Promise) {
     return knex.schema.createTable("TERRITORY", (TERRITORY) => {
       TERRITORY.increments("id")
       TERRITORY.string("territory_name")
-      TERRITORY.integer("resort").references("id").inTable("RESORT")
+      TERRITORY.integer("resort")
       TERRITORY.boolean("open_status")
-      TERRITORY.integer("lifts_running").references("id").inTable("LIFTS")
-      TERRITORY.integer("lifts").references("territory").inTable("LIFTS")
-      TERRITORY.integer("runs").references("lift").inTable("RUNS")
+      TERRITORY.integer("lifts_running")
+      TERRITORY.integer("lifts")
+      TERRITORY.integer("runs")
     }) 
   }
   
